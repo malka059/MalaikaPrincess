@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION FRENZY</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            background-color: #fdfdc7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fdfdc7;
+            color: #660066;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        /* Divide the page into 4 portions */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .portion {
+            width: 48%; /* Adjust the width as needed */
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #fdfdc7; /* Set border color to match body background color */
+        }
+        /* Styling for the image in the first, second, third, and fourth portion */
+        .portion img {
+            max-width: 100%;
+            max-height: 400px; /* Adjust the maximum height */
+            width: auto; /* Allow the width to adjust accordingly */
+            height: auto; /* Allow the height to adjust accordingly */
+        }
+        /* Styling for text */
+        .portion p {
+            margin-top: 10px;
+            font-size: 14px; /* Reduce font size for shorter text */
+        }
+        /* Newsletter styling */
+        .newsletter {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .newsletter h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 60%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #660066;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FASHION FRENZY</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+    <p style="font-weight: bold; color: #660066;">"Fashion is the armor to survive the everyday life"</p>
+    <div class="container">
+        <div class="portion">
+            <img src="https://i.etsystatic.com/13786911/r/il/4d9f0a/4346665967/il_1080xN.4346665967_qhlm.jpg">
+            <p>"Embrace the chilly evenings with my exquisite collection of sweaters. Crafted with care, my sweaters are not just about warmth but also about elevating your style quotient....</p>
+        </div>
+        <div class="portion">
+            <img src="https://images.meesho.com/images/products/224974608/230xy_512.webp">
+            <p>"Baggy jeans have stood the test of time and continue to be a fashion staple. Whether you're dressing up for a night out or keeping it casual, these jeans are the embodiment of versatility....</p>
+        </div>
+        <div class="portion">
+            <img src="https://static-01.daraz.pk/p/7f8206add6dd40df7956daddb72c7553.jpg">
+            <p>"Pack light and stylishly for your tropical getaway. My maxi beach dress is a versatile addition to your vacation wardrobe, perfect for relaxing by the shore or enjoying a sunset dinner....</p>
+        </div>
+        <div class="portion">
+            <img src="https://ae01.alicdn.com/kf/S44289209d1494c77a56de2449265278b3.jpg_640x640Q90.jpg_.webp">
+            <p>"Long-sleeve t-shirts are the embodiment of fashion meeting function. Stay comfortable and stylish throughout the day, no matter where life takes you....</p>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h3>Join My Newsletter</h3>
+        <p>
+            "Stay updated with the latest fashion trends and exclusive offers by subscribing to my newsletter. Join my fashion community today!"
+        </p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>
